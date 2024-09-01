@@ -1,0 +1,134 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+a {
+    color: #ff00b7;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Home Banner Styles */
+.home-banner {
+    background: url('images/doctor2.jpg') no-repeat center center;
+
+    background-size: cover;
+    color: #fff;
+    min-height: 400px;
+    position: relative;
+    padding: 100px 0;
+}
+
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* 50% opacity */
+    z-index: 1;
+}
+
+.home-banner-content,
+.home-banner-form {
+    position: relative;
+    z-index: 2;
+}
+
+.home-banner-content {
+    margin-top: 20%;
+}
+
+.home-banner-content span {
+    display: block;
+    font-size: 1.5rem;
+}
+
+
+.home-banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.home-banner-content p {
+    font-size: 1.2rem;
+}
+
+/* About Section Styles */
+.about {
+    background-color: #f8f9fa;
+}
+
+/* Services Section Styles */
+/* .services .card {
+    border: none;
+    border-radius: 0.25rem;
+}
+
+.services .card-img-top {
+    border-radius: 0.25rem;
+} */
+
+/* Services Section Styles */
+.services-wrapper {
+    display: flex;
+    /* Use flexbox for horizontal alignment */
+    overflow-x: auto;
+    /* Enable horizontal scrolling if needed */
+    gap: 15px;
+    /* Adjust spacing between cards */
+    padding: 10px 0;
+}
+
+.service-card {
+    flex: 0 0 auto;
+}
+
+.services-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.services-wrapper {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.card {
+    max-width: 100%;
+}
+
+
+/* Team Section Styles */
+.team .card-img-top {
+    border-radius: 50%;
+}
+
+/* Testimonials Section Styles */
+.testimonials .carousel-item {
+    text-align: center;
+}
+
+.testimonials .testimonial-item {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+
+.social-icons a {
+    font-size: 1.0rem;
+    /* Adjust size as needed */
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ddd;
+}
